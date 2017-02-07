@@ -290,7 +290,7 @@ input::-moz-focus-outer {
   position: relative;
   margin: 0;
   background: #1abc9c;
-  height: 14.75rem;
+  height: 13.75rem;
 }
 
 .tabs::before,
@@ -305,6 +305,7 @@ input::-moz-focus-outer {
 
 .tab {
   float: left;
+  width: 165px;
 }
 
 .tab-switch {
@@ -317,7 +318,7 @@ input::-moz-focus-outer {
   line-height: 2.75em;
   height: 3em;
   padding: 0 1.618em;
-  background: #1abc9c;
+  background: #40b6c2;
   border-right: 0.125rem solid #16a085;
   color: #fff;
   cursor: pointer;
@@ -365,51 +366,21 @@ input::-moz-focus-outer {
   z-index: 3;
 }
 
-.tooltip-circle {
-  background: #1abc9c;
-  width: 28px;
-  height: 28px;
-  border-radius: 16px;
-  border: 2px solid #1abc9c;
+.tooltiptext {
+  visibility: visible;
+  width: 96.4%;
+  background-color: black;
+  color: #fff;
+  text-align: left;
+  padding: 5px;
   position: absolute;
-  top: 5px;
-  right: 10px;
-  z-index: 100;
-  zcursor: help;
-}
-
-.tooltip-circle .tooltiptext {
-    visibility: hidden;
-    width: 140px;
-    background-color: black;
-    color: #fff;
-    text-align: left;
-    border-radius: 6px;
-    padding: 5px;
-    position: absolute;
-    z-index: 1;
-    bottom: 135%;
-    left: 50%;
-    margin-left: -70px;
-}
-
-.tooltip-circle .tooltiptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: black transparent transparent transparent;
-}
-
-.tooltip-circle:hover .tooltiptext {
-    visibility: visible;
+  z-index: 1;
+  opacity: .7;
+  height: 30px;
 }
 
 .clickme {
-  background: #1abc9c;
+  background: #40b6c2;
   -webkit-border-radius: 27;
   -moz-border-radius: 27;
   border-radius: 27px;
@@ -418,9 +389,51 @@ input::-moz-focus-outer {
   font-size: 16px;
   padding: 5px 10px 5px 10px;
   text-decoration: none;
-  margin-top:40px;
+  margin-top: 40px;
 }
 
-/* .clickme:hover {
-  background: ##1abc9c;
+.clickMe2:hover {
+  background: #fff;
+  border: 1px solid #40b6c2;
+  color: #40b6c2;
+  cursor: pointer;
+}
+
+.icons {
+  font-size: 15px;
+  margin-right: 7px;
+  float: left;
+  width: 30%;
+}
+
+.clickMe2 {
+  background-color: #40b6c2;
+  height: 35px;
+  width: 80px;
+  border-radius: 18px;
+  color: white;
+  border: 0px;
+  font-size: 15px;
+}
+
+/* li.product:nth-child(1) {
+  background: #588838;
+  color: #fff;
+  cursor: pointer;
+  padding-top: 4px;
+}
+
+li.product:nth-child(2) {
+  background: rgba(20, 197, 37, 0.76);
+  color: #fff;
+  cursor: pointer;
+  padding-top: 4px;
+}
+
+li.product:nth-child(3) {
+  background: rgba(89, 224, 89, 0.53);
+  color: #fff;
+  cursor: pointer;
+  padding-top: 4px;
 } */
+
